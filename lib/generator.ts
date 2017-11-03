@@ -1,15 +1,15 @@
 import dictionary from "./dictionary";
-import * as _ from "lodash";
+import { capitalize, random } from "lodash";
 
 function capitalizeEachWord(phrase: string): string {
     return phrase
         .split(" ")
-        .map(_.capitalize)
+        .map(capitalize)
         .join(" ");
 }
 
 function randomFrom(arr: string[]): string {
-    return arr[_.random(0, arr.length - 1)];
+    return arr[random(0, arr.length - 1)];
 }
 
 function singleizeIfNecessary(str: string): string {
@@ -35,7 +35,7 @@ export function generate(): string {
 
     let name: string = "";
 
-    switch (_.random(1, 8)) {
+    switch (random(1, 8)) {
         case 1:
             singleizeIfNecessary(food);
             name = ["The", food, truckType].join(" ");
