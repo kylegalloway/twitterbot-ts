@@ -1,0 +1,20 @@
+{
+  "name": "twitterbot-ts",
+  "version": "0.0.1",
+  "description": "N/A",
+  "main": "server.js",
+  "repository": "git@github.com:kylegalloway/twitterbot-ts.git",
+  "author": "Kyle Galloway <kyle.galloway.1993@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.0.39",
+    "@types/lodash": "^4.14.80",
+    "@types/node": "^8.0.47",
+    "@types/twit": "^2.2.7",
+    "express": "^4.16.2",
+    "http": "^0.0.0",
+    "lodash": "^4.17.4",
+    "twit": "^2.2.9",
+    "typescript-collections": "^1.2.5"
+  }
+}
